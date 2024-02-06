@@ -23,9 +23,9 @@ function Profiles() {
           aria-expanded={open ? 'true' : undefined}
         >
           <Avatar
-            sx={{ width: 30, height: 30 }}
+            sx={{ width: 34, height: 34 }}
             alt='Avatar'
-            src='https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/323414290_680380093547580_4495760828120825647_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=LpoIz43bfcEAX_zOBU-&_nc_ht=scontent.fhan2-3.fna&oh=00_AfCGO_h3oQ3z9RB10emoSH132I6W64M0FbeVDtZ4qMzSGg&oe=65BFCE17'
+            src='https://www.bing.com/images/search?view=detailV2&ccid=QAenzJbK&id=6FE62798F303A8ED46AC7B20C562AA458A72E040&thid=OIP.QAenzJbKBQIjv5yZhnRhjQAAAA&mediaurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F93%2F90%2F9c%2F93909cf728fb7cbe6ac51f5fb1f782d0.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.4007a7cc96ca050223bf9c998674618d%3Frik%3DQOByikWqYsUgew%26pid%3DImgRaw%26r%3D0&exph=400&expw=400&q=ji+chang+wook&simid=608050288964421505&form=IRPRST&ck=4BA8F7CE3885B16D821EF0F2703BE5F4&selectedindex=6&itb=0&vt=2'
           />
         </IconButton>
       </Tooltip>
@@ -42,7 +42,7 @@ function Profiles() {
           <Avatar sx={{ width: 28, height: 28, mr: 2 }}/> Profile
         </MenuItem>
         <MenuItem>
-          <Avatar sx={{ width: 28, height: 28, mr: 2 }}/> My account
+          <Avatar sx={{ width: 36, height: 36, mr: 2 }}/> My account
         </MenuItem>
         <Divider />
         <MenuItem>
