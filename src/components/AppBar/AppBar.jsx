@@ -1,5 +1,5 @@
 import { Badge, Box, Button, TextField, Typography } from '@mui/material'
-import ModeSelect from '~/components/ModeSelect'
+import ModeSelect from '~/components/ModeSelect/ModeSelect'
 import AppsIcon from '@mui/icons-material/Apps'
 import { ReactComponent as TrelloIcon } from '~/assets/trello.svg'
 import SvgIcon from '@mui/material/SvgIcon'
@@ -19,6 +19,7 @@ import { useState } from 'react'
 
 function AppBar() {
   const [searchValue, setSearchValue] = useState('')
+
   return (
     <Box sx={{
       width: '100%',
@@ -29,7 +30,8 @@ function AppBar() {
       gap: 2,
       paddingX: 2,
       overflowX: 'auto',
-      bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0')
+      bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0'),
+      '&::-webkit-scrollbar-track': { m: 2 }
     }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <AppsIcon sx={{ color: 'white' }} />
@@ -37,7 +39,6 @@ function AppBar() {
           <SvgIcon component={TrelloIcon} fontSize='small' inheritViewBox sx={{ color: 'white' }} />
           <Typography variant='span' sx={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'white' }}>Trello</Typography>
         </Box>
-
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
           <Workspaces />
           <Recent />
@@ -55,9 +56,7 @@ function AppBar() {
             Create
           </Button>
         </Box>
-
       </Box>
-
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <TextField
           id="outlined-search"
@@ -97,17 +96,14 @@ function AppBar() {
           }}
         />
         <ModeSelect />
-
         <Tooltip title="Notifications">
           <Badge color="warning" variant="dot" sx={{ cursor: 'pointer' }}>
             <NotificationsNoneIcon sx={{ color: 'white' }}/>
           </Badge>
         </Tooltip>
-
         <Tooltip title="Helps">
           <HelpOutlineIcon sx={{ cursor: 'pointer', color: 'white' }}/>
         </Tooltip>
-
         <Profiles />
       </Box>
     </Box>
