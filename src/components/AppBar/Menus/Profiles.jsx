@@ -11,6 +11,7 @@ function Profiles() {
   const handleClose = () => {
     setAnchorEl(null)
   }
+
   return (
     <Box>
       <Tooltip title="Account settings">
