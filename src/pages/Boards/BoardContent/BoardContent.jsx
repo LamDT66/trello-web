@@ -97,8 +97,6 @@ function BoardContent({ board }) {
         nextOverColumn.cardOrderIds = nextOverColumn.cards.map(card => card._id)
       }
 
-      console.log(nextColumns)
-
       return nextColumns
     })
   }
